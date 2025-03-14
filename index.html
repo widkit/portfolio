@@ -3,18 +3,191 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Taha Senturk - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header>
-        <h1>My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h1>Taha Senturk</h1>
+            <p class="tagline">Computer Science Student | Full Stack Developer | Linux Enthusiast | System Administrator</p>
+        </div>
     </header>
+
     <main>
         <section id="about">
             <h2>About Me</h2>
-            <p>Welcome to my portfolio website. Here you can find information about my projects and skills.</p>
+            <div class="about-content">
+                <img src="img/profile.jpg" alt="Taha Senturk" class="profile-photo">
+                <p>Hello! I'm a freshman Computer Science student with a passion for technology and system administration. My journey began with building PCs and exploring Linux systems, which evolved into a deep understanding of system architecture and infrastructure management. I'm particularly interested in open-source software, cybersecurity, and enterprise system administration. With seven years of Linux experience, on servers and on my daily driver, across various distributions, I've worked on server deployment, network configuration, and security hardening. Currently, I'm expanding my knowledge in Rust systems programming, AI integration, and advanced infrastructure automation using tools like Terraform and Docker.</p>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <ul>
+                        <li><i class="fab fa-python"></i> Python</li>
+                        <li><i class="fab fa-js"></i> JavaScript</li>
+                        <li><i class="fab fa-java"></i> Java</li>
+                        <li><i class="fas fa-cog"></i> Rust</li>
+                        <li><i class="fas fa-terminal"></i> Bash</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Web Technologies</h3>
+                    <ul>
+                        <li><i class="fab fa-html5"></i> HTML5</li>
+                        <li><i class="fab fa-css3-alt"></i> CSS3/Sass</li>
+                        <li><i class="fab fa-react"></i> React</li>
+                        <li><i class="fab fa-node-js"></i> Node.js</li>
+                        <li><i class="fab fa-python"></i> Flask</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>System Administration</h3>
+                    <ul>
+                        <li><i class="fab fa-linux"></i> Linux (Multiple Distributions)</li>
+                        <li><i class="fas fa-server"></i> Apache Server</li>
+                        <li><i class="fas fa-shield-alt"></i> System Security</li>
+                        <li><i class="fab fa-docker"></i> Docker</li>
+                        <li><i class="fas fa-network-wired"></i> Networking</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools & Platforms</h3>
+                    <ul>
+                        <li><i class="fab fa-git-alt"></i> Git/GitHub</li>
+                        <li><i class="fab fa-android"></i> Android Development</li>
+                        <li><i class="fas fa-database"></i> SQL</li>
+                        <li><i class="fas fa-cloud"></i> Terraform</li>
+                        <li><i class="fas fa-robot"></i> AI Integration</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>AI Recipe Generator - Hackathon Project</h3>
+                    <img src="img/projects/recipe.jpg" alt="AI Recipe Generator">
+                    <p>An innovative AI-powered recipe generator that transforms available ingredients into creative, personalized recipes. Built during a hackathon, this project combines AI technology with practical kitchen solutions.</p>
+                    <ul class="project-features">
+                        <li>AI-powered recipe generation based on available ingredients</li>
+                        <li>Personalized recipe recommendations with allergen info and calorie counts</li>
+                        <li>Recipe storage and management using MongoDB</li>
+                        <li>User-friendly interface for seamless recipe discovery</li>
+                    </ul>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Flask</span>
+                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">Gemini AI</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/widkit/girlhacks-2024" class="btn"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="https://www.youtube.com/watch?v=V5nxqGf-lJI" class="btn"><i class="fab fa-youtube"></i> Demo</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>Greetings - ASCII Art Generator</h3>
+                    <img src="img/projects/greetings.png" alt="Greetings ASCII Art Demo">
+                    <p>A cross-platform Python application that fetches Bing's daily wallpaper and converts it into colorful ASCII art. Features include:</p>
+                    <ul class="project-features">
+                        <li>Cross-platform compatibility (Windows, Mac, Linux)</li>
+                        <li>24-bit and 8-bit color terminal support</li>
+                        <li>Shell integration for startup customization</li>
+                        <li>Configurable ASCII conversion parameters</li>
+                    </ul>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Shell Scripting</span>
+                        <span class="tech-tag">API Integration</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/widkit/greetings" class="btn"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>Linux Server Administration</h3>
+                    <img src="img/projects/server_admin.jpg" alt="Server Administration">
+                    <p>Built and maintained four dedicated servers running various services including Apache and game servers. Implemented comprehensive security measures including firewall configuration, user management, and secure authentication systems.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Linux</span>
+                        <span class="tech-tag">Apache</span>
+                        <span class="tech-tag">Security</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="certifications">
+            <h2>Certifications</h2>
+            <div class="certifications-grid">
+                <div class="certification-card">
+                    <div class="certification-content">
+                        <div class="certification-badge">
+                            <img src="img/certs/lfs101.png" alt="LFS101 Certificate" class="cert-badge-img">
+                        </div>
+                        <div class="certification-details">
+                            <h3>LFS101: Introduction to Linux</h3>
+                            <p>Proficient in navigating and managing configurations across major Linux distributions, utilizing both graphical interface and command line operations effectively. Demonstrated expertise in system administration fundamentals and security practices.</p>
+                            <div class="cert-skills">
+                                <span class="skill-tag">System Configuration</span>
+                                <span class="skill-tag">Command Line</span>
+                                <span class="skill-tag">File Management</span>
+                                <span class="skill-tag">Network Operations</span>
+                                <span class="skill-tag">Shell Scripting</span>
+                                <span class="skill-tag">System Updates</span>
+                                <span class="skill-tag">Root Privileges</span>
+                                <span class="skill-tag">Security Management</span>
+                            </div>
+                            <div class="cert-metadata">
+                                <span><i class="fas fa-certificate"></i> The Linux Foundation</span>
+                                <span><i class="fas fa-layer-group"></i> Foundational</span>
+                                <span><i class="fas fa-clock"></i> 60 Hours</span>
+                            </div>
+                            <div class="cert-verify">
+                                <a href="https://www.credly.com/earner/earned/badge/6033bf44-ec6b-4e12-81b5-9a5216debc4c" target="_blank" class="verify-btn">
+                                    <i class="fas fa-check-circle"></i> Verify Certificate
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <div class="contact-content">
+                <p>I'm always eager to collaborate on interesting projects and contribute to meaningful initiatives. Whether you're interested in my work or have opportunities to discuss, feel free to reach out!</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/taha-tamer-senturk/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/widkit"><i class="fab fa-github"></i></a>
+                    <a href="mailto:tts26@njit.edu"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
         </section>
     </main>
+
+    <footer>
+        <p>&copy; 2024 Taha Senturk | Computer Science '28 | NJIT</p>
+    </footer>
 </body>
 </html>
